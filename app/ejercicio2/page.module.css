@@ -1,0 +1,113 @@
+/* Ejercicio 2 — Equipos de Fútbol */
+.main {
+  min-height: calc(100vh - 60px);
+  background: #f4f6f9;
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+}
+
+.main h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #003f7f;
+  border-bottom: 3px solid #fdb913;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.container__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container__list h2 {
+  grid-column: 1 / -1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #001f3f;
+  margin-bottom: 0.5rem;
+}
+
+.equipoCard {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0,63,127,.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.equipoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,63,127,.12);
+}
+
+.equipoCard h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #003f7f;
+  background: #e6f1fb;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #fdb913;
+}
+
+.equipoCard ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.jugadorItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  transition: background 0.2s;
+}
+
+.jugadorItem:hover {
+  background: #f1f5f9;
+}
+
+.fotoContainer {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fdb913;
+}
+
+.fotoJugador {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoJugador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoJugador strong {
+  color: #1a2332;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.infoJugador span {
+  font-size: 0.85rem;
+  color: #5a6a7e;
+}
