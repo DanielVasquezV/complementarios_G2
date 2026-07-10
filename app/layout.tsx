@@ -30,7 +30,20 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+        <footer style={{
+          textAlign: "center",
+          padding: "20px",
+          marginTop: "auto",
+          borderTop: "1px solid #eaeaea",
+          color: "#666",
+          fontSize: "14px"
+        }}>
+          <p>Daniel Vasquez - VV232745</p>
+          <p>DPS104 G03L - Guia 2</p>
+        </footer>
       </body>
     </html>
   );
